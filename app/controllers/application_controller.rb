@@ -7,7 +7,16 @@ class ApplicationController < ActionController::Base
 
   def cart
     #byebug
-    session[:cart] || []
+    session[:cart] ||= []
+    #byebug
   end
+
+  #def current_cart
+  #  if session[:cart] != nil
+  #    session[:cart]
+  #  elsif session[:cart] == nil
+  #    []
+  #  end
+  #end
 
 end
