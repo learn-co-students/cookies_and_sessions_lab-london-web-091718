@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   helper_method :cart
 
   def cart
+    #byebug
     session[:cart] || []
   end
 
