@@ -4,8 +4,8 @@ class ProductsController < ApplicationController
 
   def add_to_cart
     #byebug
-    @product  = params[:product]
-    cart << @product
+    cart << params[:product]
+    #byebug
     render :index
   end
 end
