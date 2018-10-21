@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   def cart
   # Load the cart from the session, or create a new empty cart.
-  byebug
+  #byebug
     session[:cart] ||= []
 
 
